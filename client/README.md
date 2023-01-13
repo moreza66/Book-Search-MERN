@@ -66,7 +66,8 @@ npm run develop
 
 #### App Screenshot
 
-![Screenshot](/client/public/GBS.png)
+![Screenshot](./public/assets/images/image%201.jpg)
+![Screenshot](./public/assets/images/image%202.jpg)
 
 ## License
 
@@ -81,6 +82,5 @@ Made by Wenwen Tian
 
 Please feel free to contact me if you need any further information:
 
-- [Email](moreza.memar@gmail.com)
 - [Email](mailto:moreza.memar@gmail.com)
 - [Github Profile](https://github.com/moreza66)
