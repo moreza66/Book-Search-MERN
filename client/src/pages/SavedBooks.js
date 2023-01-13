@@ -10,7 +10,7 @@ const SavedBooks = () => {
 
   // use this to determine if `useEffect()` hook needs to run again
   const userDataLength = Object.keys(userData).length;
-
+console.log("%%%%%", userData)
   useEffect(() => {
     const getUserData = async () => {
       try {
@@ -21,12 +21,15 @@ const SavedBooks = () => {
         }
 
         const response = await getMe(token);
+        console.log(">>>>>>> RESPONSEEEE <<<", response)
 
         if (!response.ok) {
           throw new Error('something went wrong!');
         }
 
         const user = await response.json();
+        console.log(">>>>>>> this is res <<<", user)
+        
         setUserData(user);
       } catch (err) {
         console.error(err);

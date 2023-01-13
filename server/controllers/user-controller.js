@@ -47,6 +47,7 @@ module.exports = {
   async saveBook({ user, body }, res) {
     console.log(user);
     try {
+      console.log(">>>>>>", body)
       const updatedUser = await User.findOneAndUpdate(
         { _id: user._id },
         { $addToSet: { savedBooks: body } },
