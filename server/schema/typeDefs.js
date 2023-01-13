@@ -11,6 +11,7 @@ type Query {
     username: String!
     email: String!
     password: String!
+    bookCount: String
     savedBooks: [Book]
   }
   type Auth {
