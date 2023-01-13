@@ -22,6 +22,18 @@ const resolvers = {
               console.log(err);
             }
           },
+          login: async (parent, { email, password }) => {
+            try{
+                
+                const user = await User.findOne({ email })
+                const token = signToken(user)
+                return { token, user }
+
+            } catch (err) {
+              console.log(err);
+            }
+        
+        },
     }
   };
   
